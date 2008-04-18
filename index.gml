@@ -43,12 +43,9 @@
         </tr>
       </thead>
       <tr repeat="true">
-        <td><gm:text ref="atom:title" /></td>
+        <td><gm:text data="${myList}" /></td>
         <td>
-          <gm:select ref="gd:priority">
-            <gm:option value="0" selected="true">Low</gm:option>
-            <gm:option value="1">Medium</gm:option>
-            <gm:option value="2">High</gm:option>
+          <gm:select data="${myList}" >
           </gm:select>
         </td>
         <td><gm:editButtons /></td>
