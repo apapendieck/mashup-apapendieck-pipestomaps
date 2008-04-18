@@ -33,16 +33,26 @@
   
   
   <gm:template id="mySelectTemplate">
-        <table class="blue-theme" style="width:250px">
-          <tr repeat="true">
+  <p></p>
+    <table class="blue-theme">
+      <thead>
+        <tr>
+          <th>Task</th>
+          <th>Priority</th>
+          <th />
+        </tr>
+      </thead>
+      <tr repeat="true">
+        <td><gm:text ref="atom:title" /></td>
         <td>
-          <gm:select ref="atom:title">
+          <gm:select ref="gd:priority">
             <gm:option value="0" selected="true">Low</gm:option>
             <gm:option value="1">Medium</gm:option>
             <gm:option value="2">High</gm:option>
           </gm:select>
         </td>
-          </tr>
+        <td><gm:editButtons /></td>
+      </tr>
     </table>
   </gm:template>
   
