@@ -14,7 +14,7 @@ between a list and a map is also demonstrated via the handleEvent tag.
 <table width="100%">
 <tr>
 <td style="padding-right:10px; width:250px" valign="top">
-<gm:list id="myList" data="http://pipes.yahoo.com/pipes/pipe.run?_id=a99d2102cf3cae1353021d69e81cc383&_render=rss2"
+<gm:list id="myList" data="http://pipes.yahoo.com/pipes/pipe.run?_id=a99d2102cf3cae1353021d69e81cc383&_render=rss"
 pagesize="1000" template="myListTemplate">
 <gm:handleEvent event="select" src="myMap"/>
 </gm:list>
