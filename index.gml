@@ -31,6 +31,7 @@ infotemplate="myMapDetailsTemplate">
 </table>
 
 <gm:template id="mySelectTemplate">
+  <table width="100">
   <tr repeat="true">
         <td><gm:text ref="atom:title" /></td>
         <td>
@@ -39,9 +40,7 @@ infotemplate="myMapDetailsTemplate">
         </td>
         <td><gm:editButtons /></td>
       </tr>
-
-   
-  
+      </table>
 </gm:template>
 
 <gm:template id="myMapDetailsTemplate">
