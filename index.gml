@@ -31,10 +31,16 @@ infotemplate="myMapDetailsTemplate">
 </table>
 
 <gm:template id="mySelectTemplate">
-
-
-          <gm:select labelref="atom:title" valueref="myList" >
+  <tr repeat="true">
+        <td><gm:text ref="atom:title" /></td>
+        <td>
+       <gm:select labelref="atom:title" valueref="${myList}" >
           </gm:select>
+        </td>
+        <td><gm:editButtons /></td>
+      </tr>
+
+   
   
 </gm:template>
 
