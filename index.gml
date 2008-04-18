@@ -13,7 +13,7 @@ between a list and a map is also demonstrated via the handleEvent tag.
 
 <table width="100%">
 <tr>
-<td style="padding-right:10px; width:250px" valign="top">
+<td style="padding-right:10px; width:150px" valign="top">
 <gm:list id="myList" data="http://pipes.yahoo.com/pipes/pipe.run?_id=a99d2102cf3cae1353021d69e81cc383&_render=rss"
 pagesize="20" template="myListTemplate">
 <gm:handleEvent event="select" src="myMap"/>
@@ -22,7 +22,7 @@ pagesize="20" template="myListTemplate">
 <td valign="top">
 <gm:map id="myMap" style="border:solid black 1px" control="large"
 maptypes="true" data="${myList}" latref="geo:lat" lngref="geo:long"
-infotemplate="myMapDetailsTemplate" height="500" >
+infotemplate="myMapDetailsTemplate" height="600" witdth="600" >
 <gm:handleEvent event="select" src="myList"/>
 </gm:map>
 </td>
