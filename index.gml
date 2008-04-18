@@ -34,6 +34,7 @@
   
   <gm:template id="mySelectTemplate">
         <table class="blue-theme" style="width:250px">
+          <tr repeat="true">
         <td>
           <gm:select ref="atom:title">
             <gm:option value="0" selected="true">Low</gm:option>
@@ -41,6 +42,7 @@
             <gm:option value="2">High</gm:option>
           </gm:select>
         </td>
+          </tr>
     </table>
   </gm:template>
   
