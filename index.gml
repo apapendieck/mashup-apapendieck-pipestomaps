@@ -45,7 +45,7 @@
       <tr repeat="true">
         <td><gm:text data="${myList}" /></td>
         <td>
-          <gm:select data="${myList}" >
+          <gm:select ref="atom:title" >
           </gm:select>
         </td>
         <td><gm:editButtons /></td>
