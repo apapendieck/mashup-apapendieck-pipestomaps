@@ -18,7 +18,7 @@ between a list and a map is also demonstrated via the handleEvent tag.
 <table class="blue-theme" style="width:250px">
   <tr repeat="true">
         <td>
-          <gm:select data="http://pipes.yahoo.com/pipes/pipe.run?_id=a99d2102cf3cae1353021d69e81cc383&_render=rss" labelref="atom:title" valueref="myList" >
+          <gm:select labelref="atom:title" valueref="myList" >
           </gm:select>
         </td>
         </tr>
@@ -26,7 +26,7 @@ between a list and a map is also demonstrated via the handleEvent tag.
 </gm:template>
 <tr>
 <td style="padding-right:10px; width:250px" valign="top">
-<gm:list id="myList" template="mySelectTemplate">
+<gm:list id="myList" data="http://pipes.yahoo.com/pipes/pipe.run?_id=a99d2102cf3cae1353021d69e81cc383&_render=rss" template="mySelectTemplate">
 <gm:handleEvent event="select" src="myMap"/>
 </gm:list>
 </td>
