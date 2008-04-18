@@ -29,7 +29,7 @@
     </tr>    
   </table>
 
-  <gm:template id="myListTemplate">
+  <gm:template id="myItemTemplate">
     <table class="blue-theme" style="width:250px">
       <tr repeat="true">
         <td><gm:text ref="atom:title"/></td>
@@ -42,7 +42,7 @@
     </table>
   </gm:template>
 
-  <gm:template id="myMapDetailsTemplate">
+  <gm:template id="myItemTemplate">
     <div repeat="true">
       <b><gm:text ref="atom:title"/></b><br/>
       Description: <gm:text ref="atom:summary"/><br/>
