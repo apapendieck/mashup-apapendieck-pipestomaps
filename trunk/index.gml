@@ -6,9 +6,7 @@ geo-location information and mapping it on a Google Map. Interaction
 between a list and a map is also demonstrated via the handleEvent tag.
 @author: GME Team
 -->
-<select id="startSelect" style="margin-right:5px">
-  <option>Choose a starting point</option>
-</select>
+
 
 
 
@@ -24,12 +22,15 @@ between a list and a map is also demonstrated via the handleEvent tag.
 <td style="padding-right:10px; width:250px" valign="top">
 
 
- <gm:list id="myList" data="http://pipes.yahoo.com/pipes/pipe.run?_id=a99d2102cf3cae1353021d69e81cc383&_render=rss" labelref="atom:title" valueref="${myList}" >
-<gm:handleEvent event="select" src="myMap"/>
-</gm:list>
+ 
 
 </td>
 <td valign="top">
+  <select id="startSelect" style="margin-right:5px">
+  <option><gm:list id="myList" data="http://pipes.yahoo.com/pipes/pipe.run?_id=a99d2102cf3cae1353021d69e81cc383&_render=rss" labelref="atom:title" valueref="${myList}" >
+<gm:handleEvent event="select" src="myMap"/>
+</gm:list></option>
+</select>
 <gm:map id="myMap" style="border:solid black 1px" control="large"
 maptypes="true" data="${myList}" latref="geo:lat" lngref="geo:long"
 infotemplate="myMapDetailsTemplate">
