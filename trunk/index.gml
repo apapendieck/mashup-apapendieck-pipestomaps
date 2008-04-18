@@ -29,7 +29,7 @@
     </tr>    
   </table>
 
-  <gm:template id="myListTemplate" template="articlelist">
+  <gm:template id="myListTemplate">
     <table class="blue-theme" style="width:250px">
       <tr repeat="true">
         <td><gm:text ref="atom:title"/></td>
