@@ -29,16 +29,25 @@
     </tr>    
   </table>
 
-  <gm:template id="myListTemplate">
-    
+  
+ 
+  
+  <gm:template id="mySelectTemplate">
+        <table class="blue-theme" style="width:250px">
+      <tr repeat="true">
         <td>
           <gm:select ref="atom:title">
             <gm:option value="0" selected="true">Low</gm:option>
             <gm:option value="1">Medium</gm:option>
             <gm:option value="2">High</gm:option>
           </gm:select>
-        </td>    
-        
+        </td>
+      </tr>
+    </table>
+  </gm:template>
+  
+  <gm:template id="myListTemplate">
+ 
         <table class="blue-theme" style="width:250px">
       <tr repeat="true">
         <td><gm:text ref="atom:title"/></td>
