@@ -42,7 +42,7 @@
     </table>
   </gm:template>
 
-  <gm:template id="myListTemplate">
+  <gm:template id="myListTemplate2">
     <div repeat="true">
       <b><gm:text ref="atom:title"/></b><br/>
       Description: <gm:text ref="atom:summary"/><br/>
