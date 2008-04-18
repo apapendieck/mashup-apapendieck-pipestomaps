@@ -33,14 +33,10 @@ infotemplate="myMapDetailsTemplate">
 <gm:template id="myListTemplate">
 
 <table class="blue-theme" style="width:250px">
-<tr repeat="true">
-<td><gm:text ref="atom:title"/></td>
-</tr>
-<tfoot>
-<tr>
-<td align="center"><gm:pager compact="true"/></td>
-</tr>
-</tfoot>
+        <td>
+          <gm:select labelref="atom:title" valueref="atom:title" >
+          </gm:select>
+        </td>
 </table>
 </gm:template>
 
